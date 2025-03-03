@@ -3,8 +3,8 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'Class';
-  res.send(`Hello ${name}!`);
+  const name = process.env.NAME || 'Clase';
+  res.send(`Hola ${name}!`);
 });
 
 app.listen(port, () => {

@@ -12,11 +12,11 @@ gcloud beta builds triggers export hello-world \
 Look for build section and change:
 
 build: \
-  images: \
-  - gcr.io/digital-transformation-451815/github.com/oscar01mx/hello-world:$COMMIT_SHA \
+  images: 
+    gcr.io/digital-transformation-451815/github.com/oscar01mx/hello-world:$COMMIT_SHA \
   **options: \
     logging: CLOUD_LOGGING_ONLY**   ← Add this \
-  steps: \
+  steps: 
    ...  \
 
 # 3. Import back

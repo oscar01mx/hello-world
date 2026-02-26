@@ -9,7 +9,7 @@ gcloud beta builds triggers export hello-world \
   --destination=trigger-fix.yaml
 
 # 2. Edit  trigger-fix.yaml
-   Look for build section and change:
+Look for build section and change:
 build:
   images:
   - gcr.io/digital-transformation-451815/github.com/oscar01mx/hello-world:$COMMIT_SHA

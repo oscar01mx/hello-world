@@ -8,7 +8,7 @@ gcloud beta builds triggers export hello-world \
   --project=digital-transformation-451815 \
   --destination=trigger-fix.yaml
 
-2. Edit  trigger-fix.yaml
+# 2. Edit  trigger-fix.yaml
    Look for build section and change:
 build:
   images:
@@ -18,7 +18,7 @@ build:
   steps:
   # ... 
 
-3. Import back
+# 3. Import back
    gcloud beta builds triggers import \
   --source=trigger-fix.yaml \
   --region=us-central1 \
